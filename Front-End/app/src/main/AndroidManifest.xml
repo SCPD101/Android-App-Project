@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.view">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.project.view.loginView.MainActivity"
+            android:label="@string/welcomeToStore">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.project.view.customerView.UserLayout"
+            android:label="@string/user"
+            android:windowSoftInputMode="adjustNothing"
+            android:parentActivityName="com.project.view.loginView.MainActivity" />
+        <activity
+            android:name="com.project.view.adminView.AdminLayout"
+            android:label="@string/admin"
+            android:parentActivityName="com.project.view.loginView.MainActivity"/>
+        <activity
+            android:name="com.project.view.employeeView.EmployeeLayout"
+            android:label="@string/employee"
+            android:parentActivityName="com.project.view.loginView.MainActivity"/>
+        <activity
+            android:name="com.project.view.customerView.ShoppingCart"
+            android:label="@string/myShoppingCart"
+            android:parentActivityName="com.project.view.customerView.UserLayout" />
+        <activity
+            android:name="com.project.view.customerView.UserProfile"
+            android:label="@string/ViewProfile"
+            android:parentActivityName="com.project.view.customerView.UserLayout" />
+        <activity
+            android:name="com.project.view.adminView.RestockAdmin"
+            android:label="@string/restock"
+            android:parentActivityName="com.project.view.adminView.AdminLayout" />
+        <activity
+            android:name="com.project.view.adminView.CreateNewAccountAdmin"
+            android:label="@string/creatANewAccount"
+            android:parentActivityName="com.project.view.adminView.AdminLayout"/>
+        <activity
+            android:name="com.project.view.adminView.PromoteEmployee"
+            android:label="@string/promoteEmployees"
+            android:parentActivityName="com.project.view.adminView.AdminLayout" />
+        <activity
+            android:name="com.project.view.adminView.Viewbook"
+            android:label="@string/viewbook"
+            android:parentActivityName="com.project.view.adminView.AdminLayout" />
+        <activity
+            android:name="com.project.view.employeeView.RestockEmployee"
+            android:label="@string/restock"
+            android:parentActivityName="com.project.view.employeeView.EmployeeLayout"/>
+        <activity
+            android:name="com.project.view.adminView.EditInfoAdmin"
+            android:label="@string/edit_info"
+            android:parentActivityName="com.project.view.adminView.AdminLayout"/>
+        <activity
+            android:name="com.project.view.employeeView.EditInfoEmployee"
+            android:label="@string/edit_info"
+            android:parentActivityName="com.project.view.employeeView.EmployeeLayout"/>
+        <activity android:name="com.project.view.employeeView.CreateNewAccountEmployee"
+            android:label="@string/creatANewAccount"
+            android:parentActivityName="com.project.view.employeeView.EmployeeLayout" />
+        <activity android:name="com.project.view.initializationView.FinishSetUp"
+            android:label="@string/set_up_complete" />
+        <activity android:name="com.project.view.initializationView.InitializeAdmin"
+            android:label="@string/setting_up"/>
+        <activity android:name="com.project.view.initializationView.InitializeEmployee"
+            android:label="@string/setting_up"/>
+        <activity android:name="com.project.view.newAccountResultView.NewAccountResultLayout"
+            android:label="@string/new_account_created"/>
+        <activity android:name="com.project.view.customerView.EditInfoCustomer"
+            android:label="@string/edit_info"
+            android:parentActivityName="com.project.view.customerView.UserProfile"/>
+
+    </application>
+
+</manifest>
